@@ -8,7 +8,6 @@ abstract class AuthRemoteDataSource {
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   @override
   Future<UserModel> login(String email, String password) async {
-    // Mocking an API call
     await Future.delayed(const Duration(seconds: 2));
     
     if (email == "admin@hospital.com" && password == "admin123") {
